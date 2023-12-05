@@ -1,0 +1,157 @@
+
+.index  {
+    background-color:#D6EAEB;
+    color:#218688;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Propuestas {
+    background-color:#D6EAEB;
+    color:#218688;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Somos {
+    background-color:#D6EAEB;
+    color:#218688;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Contacto {
+    background-color:#D6EAEB;
+    color:#218688;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Fotos {
+    background-color:#D6EAEB;
+    color:#218688;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}  
+  
+/* todos los footer de los 5 html */
+footer {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-evenly;
+}
+
+.Somos main  {
+    display: flex;
+    justify-content: center;
+}
+
+
+ .index h1 {
+        display: flex;
+        justify-content: center;        
+        background-color:#D6EAEB;
+        color:#218688;
+        font-size: 55px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+
+ 
+.Somos h1  {
+    display: flex;
+    justify-content: center;
+}
+
+.Contacto main ul li p, img  {
+     display: flex;
+     justify-content: center;
+}
+
+.Fotos header h1 {
+    display: flex;
+    justify-content: center
+}
+
+.Somos main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+} 
+
+
+/* menu de nav (fotos)
+.Fotos-header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    align-items: center;
+    
+    padding-top: 30px;
+    padding-bottom: 50px;
+}  */
+
+
+
+
+.Propuestas h1 {
+    display: flex;
+    justify-content: center
+}
+
+/* img de galeria*/
+.fotos-main {
+    display: grid;
+    height: 70vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 25%);
+    gap: 2rem;
+    margin:3rem 2rem;
+} 
+
+.fotos-main div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* estilos de lista en contacto */
+.Contacto main ul li {
+list-style-type: none;
+display: grid;
+justify-content: center;
+}
+
+/* whatsapp position */
+.whatsapp-icon {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+/* mq de tablet */
+@media screen and (min-width: 600px) {
+    .fotos {
+        background-color: tomato;
+    }
+}
+
+
+
+/* ejemplo de grid 
+.grid-conteiner {
+    border: 3px solid black;
+    grid-template-rows: repeat(4, 150px);
+    grid-template-columns:1fr 2fr 1fr;
+    display: grid;
+}
+
+.grid-item {
+    border: 1px solid black
+}
+
+.first-item {
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+*/
