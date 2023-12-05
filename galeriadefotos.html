@@ -52,19 +52,36 @@
                 </div>
               </nav>
         <h1>Galeria de fotos</h1></header>
-        <main class="Fotos-main">
-           <div> <img src="images/Staff.jpg" alt="Galeria de fotos"></div>
-           <div> <img src="images/Burbujasparatodos.jpg" alt="Jugando con Burbujas"></div>
-           <div> <img src="images/GlitterEnRostro.jpg" alt="Glitter de Picachu"></div>
-           <div> <img src="images/MomentosdeDiversión.jpg" alt="niños jugando"></div>
-           <div> <img src="images/NiñoEnInflable.jpg" alt="Niño en Inflable"></div>
-           <div> <img src="images/NiñoSonriendo.jpg" alt="Niño sonriendo"></div>
-           <div> <img src="images/JugandoconBurbujas.jpg" alt="Jugando con Burbujas"></div>
-           <div> <img src="images/NiñoSaltandoEnInflable.jpg" alt="Niño Saltando En Inflable"></div>
-           <div> <img src="images/SonicDisfraz.jpg" alt="Sonic Disfraz"></div>
-           <div> <img src="images/SonicDisfraz2.jpg" alt="Galeria de fotos"></div>
-
-           
+<!-- bootstrap carousel -->
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              
+              <img src="images/GlitterEnRostro.jpg" class="d-block w-100" alt="Glitter En Rostro">
+            </div>
+            
+            <div class="carousel-item">
+              <img src="images/Glitterytattoo.jpg" class="d-block w-100" alt="Glitter y Tattoo">
+            </div>
+            <div class="carousel-item">
+              <img src="images/MásGlitterVioleta.jpg" class="d-block w-100" alt="Más Glitter Violeta">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+                   
     <div class="whatsapp-icon">
         <img src="images/whatsapp-icon-html.png" alt="whatsapp-icon">
     </div>
