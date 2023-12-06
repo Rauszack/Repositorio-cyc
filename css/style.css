@@ -1,4 +1,4 @@
-
+/* estilos del html Index */
 .index  {
     background-color:#D6EAEB;
     color:#218688;
@@ -6,6 +6,7 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/* estilos del html de Propuestas */
 .Propuestas {
     background-color:#D6EAEB;
     color:#218688;
@@ -13,12 +14,14 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/* estilos del html de somos */
 .Somos {
     background-color:#D6EAEB;
     color:#218688;
     font-size: 18px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+/* estilos del html de contacto */
 
 .Contacto {
     background-color:#D6EAEB;
@@ -27,6 +30,7 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/* estilos del html de fotos */
 .Fotos {
     background-color:#D6EAEB;
     color:#218688;
@@ -41,12 +45,13 @@ footer {
     justify-content: space-evenly;
 }
 
+/* subtitulo de la img en somos */
 .Somos main  {
     display: flex;
-    justify-content: center;
+    justify-content: center;    
+    flex-wrap: wrap;
 }
-
-
+/* subtitulos del index */
  .index h1 {
         display: flex;
         justify-content: center;        
@@ -56,6 +61,7 @@ footer {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
  }
 
+ /* titulo del index */
  .titulo1 {
     display: flex;
     justify-content: center;        
@@ -66,48 +72,17 @@ footer {
 
  }
 
+ /* titulo somos */
 .Somos h1  {
     display: flex;
     justify-content: center;
 }
 
-.Contacto main ul li p, img  {
+/* estilos de contacto */
+.Contacto main ul li p  {
      display: flex;
      justify-content: center;
 }
-
-.Fotos header h1 {
-    display: flex;
-    justify-content: center
-}
-
-.Somos main {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-} 
-
-.Propuestas h1 {
-    display: flex;
-    justify-content: center
-}
-
-/* img de galeria*/
-.fotos-main {
-    display: grid;
-    height: 70vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 25%);
-    gap: 2rem;
-    margin:3rem 2rem;
-} 
-
-.fotos-main div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 
 /* estilos de lista en contacto */
 .Contacto main ul li {
@@ -116,42 +91,70 @@ display: grid;
 justify-content: center;
 }
 
+/* titulo de fotos */
+.Fotos header h1 {
+    display: flex;
+    justify-content: center
+}
+
+/* Titulo en propuestas */
+.Propuestas h1 {
+    display: flex;
+    justify-content: center
+}
+
 /* whatsapp position */
 .whatsapp-icon {
     position: fixed;
     right: 0;
     bottom: 0;
 }
-   
-/* img de index*/
-.index main {
+
+/* grid galeria de fotos */
+.grid-container {
     display: grid;
-    height: 70vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 100%);
-    gap: 2rem;
-    margin:3rem 2rem;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    padding: 5px;
 }
-   
-.index main div img {
-    
+
+.grid-img img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-} 
+}
 
-/* img de galeria
-.fotos-main {
+
+.
+
+
+/* media query mobile */
+
+@media only screen and (max-width:470px) {
+
+/* grid propuestas */
+.grid-item-container {
     display: grid;
-    height: 70vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 60%);
-    gap: 2rem;
-    margin:3rem 2rem;
-} 
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr ;
+    row-gap: 10px;
+    column-gap: 10px;
+    padding: 5px;
+}
+}
 
-.fotos-main div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}*/
+/* media query desktop */
+
+@media only screen and (min-width: 471px) {
+
+/* grid propuestas */
+.grid-item-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    padding: 5px;
+}
+}
