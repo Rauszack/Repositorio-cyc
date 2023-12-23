@@ -1,160 +1,120 @@
-/* estilos del html Index */
-.index  {
-    background-color:#D6EAEB;
-    color:#218688;
-    font-size: 18px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+@im /* estilos del html Index */
+.index {
+  background-color: #D6EAEB;
+  color: #218688;
+  font-size: 18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 55px; }
+  .titulo1 {
+    display: flex;
+    justify-content: center;
+    font-size: 22px; }
+  footer {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-evenly; } }
 
 /* estilos del html de Propuestas */
 .Propuestas {
-    background-color:#D6EAEB;
-    color:#218688;
-    font-size: 18px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+  background-color: #D6EAEB;
+  color: #218688;
+  font-size: 18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+  .Propuestas h1 {
+    display: flex;
+    justify-content: center; }
+  .Propuestas footer {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-evenly; }
+  @media only screen and (max-width: 470px) {
+    .Propuestas {
+      /* grid propuestas */ }
+      .Propuestas .grid-item-container {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+        column-gap: 10px;
+        padding: 5px; } }
+  @media only screen and (min-width: 471px) {
+    .Propuestas {
+      /* grid propuestas */ }
+      .Propuestas .grid-item-container {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 10px;
+        column-gap: 10px;
+        padding: 5px; } }
 
 /* estilos del html de somos */
 .Somos {
-    background-color:#D6EAEB;
-    color:#218688;
-    font-size: 18px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-/* estilos del html de contacto */
+  background-color: #D6EAEB;
+  color: #218688;
+  font-size: 18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+  .Somos main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+  .Somos h1 {
+    display: flex;
+    justify-content: center; }
+  .Somos footer {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-evenly; }
 
+/* estilos del html de contacto */
 .Contacto {
-    background-color:#D6EAEB;
-    color:#218688;
-    font-size: 18px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+  background-color: #D6EAEB;
+  color: #218688;
+  font-size: 18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+  .Contacto main ul li {
+    list-style-type: none;
+    display: grid;
+    justify-content: center; }
+    .Contacto main ul li p {
+      display: flex;
+      justify-content: center; }
+  .Contacto footer {
+    display: flex;
+    margin-top: 50px;
+    padding-top: 50px;
+    justify-content: space-evenly; }
 
 /* estilos del html de fotos */
 .Fotos {
-    background-color:#D6EAEB;
-    color:#218688;
-    font-size: 18px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}  
-  
-/* todos los footer de los 5 html */
-footer {
+  background-color: #D6EAEB;
+  color: #218688;
+  font-size: 18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  /* grid galeria de fotos */ }
+  .Fotos header h1 {
+    display: flex;
+    justify-content: center; }
+  .Fotos footer {
     display: flex;
     margin-top: 50px;
-    justify-content: space-evenly;
-}
-
-/* subtitulo de la img en somos */
-.Somos main  {
-    display: flex;
-    justify-content: center;    
-    flex-wrap: wrap;
-}
-/* subtitulos del index */
- .index h1 {
-        display: flex;
-        justify-content: center;        
-        background-color:#D6EAEB;
-        color:#218688;
-        font-size: 55px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
- }
-
- /* titulo del index */
- .titulo1 {
-    display: flex;
-    justify-content: center;        
-    background-color:#D6EAEB;
-    color:#218688;
-    font-size: 22px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
- }
-
- /* titulo somos */
-.Somos h1  {
-    display: flex;
-    justify-content: center;
-}
-
-/* estilos de contacto */
-.Contacto main ul li p  {
-     display: flex;
-     justify-content: center;
-}
-
-/* estilos de lista en contacto */
-.Contacto main ul li {
-list-style-type: none;
-display: grid;
-justify-content: center;
-}
-
-/* titulo de fotos */
-.Fotos header h1 {
-    display: flex;
-    justify-content: center
-}
-
-/* Titulo en propuestas */
-.Propuestas h1 {
-    display: flex;
-    justify-content: center
-}
-
-/* whatsapp position */
-.whatsapp-icon {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-}
-
-/* grid galeria de fotos */
-.grid-container {
+    justify-content: space-evenly; }
+  .Fotos .grid-container {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 10px;
     column-gap: 10px;
-    padding: 5px;
-}
-
-.grid-img img {
+    padding: 5px; }
+  .Fotos .grid-img img {
     width: 100%;
-    height: 100%;
-}
+    height: 100%; }
 
-
-.
-
-
-/* media query mobile */
-
-@media only screen and (max-width:470px) {
-
-/* grid propuestas */
-.grid-item-container {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr ;
-    row-gap: 10px;
-    column-gap: 10px;
-    padding: 5px;
-}
-}
-
-/* media query desktop */
-
-@media only screen and (min-width: 471px) {
-
-/* grid propuestas */
-.grid-item-container {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 10px;
-    column-gap: 10px;
-    padding: 5px;
-}
-}
+/* whatsapp position */
+.whatsapp-icon {
+  position: fixed;
+  right: 0;
+  bottom: 0; }
