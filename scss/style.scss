@@ -1,8 +1,8 @@
 @import "secundarios/variables"
 
 .index  {
-    background-color: #D6EAEB;
-    color:#218688;
+    background-color: $color-secundario;
+    color:$color-principal;
     font-size: 18px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
@@ -111,12 +111,15 @@
 
     main ul li {
         list-style-type: none;
-        display: grid;
         justify-content: center;
-            p  {
+            p {
             display: flex;
             justify-content: center;
-                } 
+              } 
+            a {
+            display: flex;
+            justify-content: center;
+              }
     }
 
     footer {
