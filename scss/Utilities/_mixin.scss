@@ -1,0 +1,14 @@
+// (caja de pandora) 
+// 1-mixin con parametros
+@mixin medidas ($width, $height) {
+    width: $width;
+    height: $height;
+}
+// 2-mixin sin parametros
+
+@mixin footer-flex {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-evenly;
+
+}
